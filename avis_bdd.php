@@ -4,8 +4,8 @@ header('Access-Control-Allow-Origin: *');
 
 $host = 'mysql-gonzalez-gomez.alwaysdata.net';
 $db   = 'gonzalez-gomez_bdd_avis';
-$user = '444518';      // à adapter
-$pass = 'YasHugBapCle';     // à adapter
+$user = '444518';      // à changer
+$pass = 'YasHugBapCle';     // à changer
 $charset = 'utf8mb4';
 
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
@@ -66,4 +66,5 @@ if ($method === 'POST') {
 }
 
 http_response_code(405);
+
 echo json_encode(['error' => 'Méthode non autorisée.']);
